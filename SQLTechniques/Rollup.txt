@@ -1,0 +1,17 @@
+--Gives running total
+SELECT 
+case  GROUPING([col1])
+when 1 then 'Sub total'
+else 
+[col1]
+end as [col1]
+	 ,
+	 case grouping ([col2])
+	 when 1 then 'Sub total'
+	 else
+	 [col2]
+	 end as [col2]
+      ,sum([amt]) as SumOfAmt
+  FROM [Table1]
+  group by rollup([col1]
+	 ,[col2]

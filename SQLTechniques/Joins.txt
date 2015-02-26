@@ -1,0 +1,19 @@
+--some queries you never knew existed
+--Full outer join
+select * from table4 full outer join table2 on table2.id = table4.id
+
+--cross join
+select * from table1 ,table2
+select * from table1 cross join table2 
+
+--Inner join
+select * from table1 join table2 on table2.id = table1.id
+select * from table1 inner join table2 on table2.id = table1.id
+ 
+--left join
+select * from table1 left outer join table2 on table2.id = table1.id
+select * from table1 left join table2 on table2.id = table1.id
+
+--right join
+select * from table4 right outer join table2 on table2.id = table4.id
+select * from table4 right join table2 on table2.id = table4.id
