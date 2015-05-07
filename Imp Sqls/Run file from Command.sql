@@ -1,0 +1,1 @@
+EXEC xp_cmdshell 'sqlcmd -S server -i "\\folder\sqlfile.sql"'
